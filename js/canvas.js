@@ -510,57 +510,19 @@ function buildGameCanvas(){
 	resultShareTxt.text = shareText;
 	
 	//buttonFacebook = new createjs.Bitmap(loader.getResult('buttonFacebook'));
-	//buttonTwitter = new createjs.Bitmap(loader.getResult('buttonTwitter'));
+	buttonTwitter = new createjs.Bitmap(loader.getResult('buttonTwitter'));
 	//buttonWhatsapp = new createjs.Bitmap(loader.getResult('buttonWhatsapp'));
 	//centerReg(buttonFacebook);
 	//createHitarea(buttonFacebook);
-	//centerReg(buttonTwitter);
-	//createHitarea(buttonTwitter);
+	centerReg(buttonTwitter);
+	createHitarea(buttonTwitter);
 	//centerReg(buttonWhatsapp);
 	//createHitarea(buttonWhatsapp);
 	
-	//buttonRestart = new createjs.Bitmap(loader.getResult('buttonRestart'));
-	//centerReg(buttonRestart);
-	//createHitarea(buttonRestart);
+	buttonRestart = new createjs.Bitmap(loader.getResult('buttonRestart'));
+	centerReg(buttonRestart);
+	createHitarea(buttonRestart);
 
-	// Add new button for wallet submission
-buttonSubmitWallet = new createjs.Bitmap(loader.getResult('buttonSubmitWallet'));
-centerReg(buttonSubmitWallet);
-createHitarea(buttonSubmitWallet);
-
-// Button for sharing on X
-buttonTwitter = new createjs.Bitmap(loader.getResult('buttonTwitter'));
-centerReg(buttonTwitter);
-createHitarea(buttonTwitter);
-
-// Restart button
-buttonRestart = new createjs.Bitmap(loader.getResult('buttonRestart'));
-centerReg(buttonRestart);
-createHitarea(buttonRestart);
-
-// Add interactivity
-buttonSubmitWallet.addEventListener('click', function() {
-    const walletAddress = prompt("Enter your wallet address for $SQUIDGAM3 airdrop:");
-    if (walletAddress) {
-        // Save or send the wallet address to your server
-        console.log(`Wallet Address Submitted: ${walletAddress}`);
-        alert("Thank you! Your wallet address has been submitted.");
-    } else {
-        alert("Wallet address submission canceled.");
-    }
-});
-
-buttonTwitter.addEventListener('click', function() {
-    const shareText = "I just joined the $SQUIDGAM3 airdrop! Submit your wallet and share to get tokens in the next airdrop!";
-    const shareURL = `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`;
-    window.open(shareURL, '_blank');
-});
-
-buttonRestart.addEventListener('click', function() {
-    // Logic to restart the app or game
-    console.log("Restart button clicked!");
-});
-	
 	//option
 	buttonFullscreen = new createjs.Bitmap(loader.getResult('buttonFullscreen'));
 	centerReg(buttonFullscreen);
