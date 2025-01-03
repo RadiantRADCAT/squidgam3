@@ -509,15 +509,15 @@ function buildGameCanvas(){
 	resultShareTxt.textBaseline='alphabetic';
 	resultShareTxt.text = shareText;
 	
-	buttonFacebook = new createjs.Bitmap(loader.getResult('buttonFacebook'));
+	//buttonFacebook = new createjs.Bitmap(loader.getResult('buttonFacebook'));
 	buttonTwitter = new createjs.Bitmap(loader.getResult('buttonTwitter'));
-	buttonWhatsapp = new createjs.Bitmap(loader.getResult('buttonWhatsapp'));
-	centerReg(buttonFacebook);
-	createHitarea(buttonFacebook);
+	//buttonWhatsapp = new createjs.Bitmap(loader.getResult('buttonWhatsapp'));
+	//centerReg(buttonFacebook);
+	//createHitarea(buttonFacebook);
 	centerReg(buttonTwitter);
 	createHitarea(buttonTwitter);
-	centerReg(buttonWhatsapp);
-	createHitarea(buttonWhatsapp);
+	//centerReg(buttonWhatsapp);
+	//createHitarea(buttonWhatsapp);
 	
 	buttonRestart = new createjs.Bitmap(loader.getResult('buttonRestart'));
 	centerReg(buttonRestart);
